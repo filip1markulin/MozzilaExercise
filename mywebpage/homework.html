@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #allproducts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    width: 400px;
+}
+.product{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    border: solid 1px red;
+    background-color: green;
+ }
+ #div{
+    display: flex;
+    flex-direction: column;
+}
+ .SoldOut{
+     position: absolute;
+     top: 50%;
+     background-color: red;
+ }
+    </style>
+    </head>
+<body>
+<div id="allproducts">
+    <h1>The following are Pepa products:</h1>
+ <div id="div">
+ <div class="product">
+     <img src="pepa1.png"></img>
+     <h2>Pepa and George</h2>
+     <h3>price 80€</h3>
+ </div>
+ <div class="product">
+ <img src="pepa2.jpg"></img>
+ <h2>Pepa and George in disguise</h2>
+ <h3>price 40€</h3>
+ </div>
+<div class="product"><img src="pepa alone.png"></img>
+    <div class="SoldOut">
+        <h4>No longer in stock</h4>
+    </div>
+    <h2>Standalone Pepa</h2>
+    <h3>price 25€</h3>
+</div>   
+</div>
+</div>
+</body>
+</html>
