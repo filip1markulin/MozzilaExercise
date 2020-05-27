@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #containeroftools{
+            background-color: blue;
+            transform: rotate(-90deg);
+            display: flex;
+            position: fixed;
+            top: 50%;
+        }
+        #containeroftools:hover .secondcontainer{
+            transform: translateY(100%);
+            opacity: 1;
+        }
+        .secondcontainer{
+            background-color: red;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 3s;
+            transition: transform 3s;
+        }
+    </style>
+</head>
+<body>
+    <div id="containeroftools">
+        <div class="secondcontainer">
+            <h2>Tools</h2>
+        </div>
+        <h1>Toolbox</h1>
+    </div>
+</body>
+</html>

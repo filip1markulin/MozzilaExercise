@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainlinks{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .mainlinks a{
+            display: flex;
+            justify-content: flex-start;
+            color: #f2f2f2;
+            padding: 12px 14px;
+            text-decoration: none;
+            text-align: center;
+            flex-direction: row;
+        }
+        .mainlinks a:hover{
+            background-color: black;
+            color: white;
+        }
+        @media screen and (max-width: 600px) {
+            .mainlinks {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        #navbar{
+            background-color: grey;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+        @media screen and (max-width: 600px) {
+            #navbar{
+                display: flex;
+                flex-direction: column;
+                width: 20%;
+                justify-content: space-around;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="mainlinks">
+        <a href="#">Link</a>
+        <a href="#">Link</a>    
+        <a href="#">Link</a>
+        </div>
+    </nav>
+</body>
+</html>
