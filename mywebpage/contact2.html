@@ -20,7 +20,7 @@
                 <a href="about2.html">O meni</a>
             </div>
             <div class="navigation">
-                <a class="active">Kontkat</a>
+                <a class="active">Obrazac</a>
             </div>
             <div class="navigation">
                 <a href="products2.html">Proizvodi</a>
@@ -32,10 +32,25 @@
         </div>
     </nav>
     <header>
-        <h1>Contact page</h1>
+        <h1>Stranica obrazca</h1>
     </header>
     <main>
-        <p>You can find me here</p>
+        <form action="end.html">
+            <label for="fname">Ime</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Prezime</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Država</label>
+            <select id="country" name="country">
+              <option value="australia">Croatia</option>
+              <option value="canada">Luxembourg</option>
+              <option value="usa">UK</option>
+            </select>
+          
+            <input type="submit" value="Submit">
+          </form>
     </main>
 </body>
 </html>
