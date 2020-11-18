@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="number.js"> </script>
+</head>
+<style>
+    .box{
+        height:50px;
+        width:50px;
+    }
+    .redbox{
+        background-color: red;
+    }
+    .bluebox{
+        background-color: blue;
+    }
+</style>
+<body>
+    <p>This is some text</p>
+    <input id="multiplier" value="">
+    (
+    <input id="firstInput" value="">
+    +
+    <input id="secondInput" value="">
+    )
+    <button onclick="multiply()"> Complex calculation</button>
+    <div id="Result"></div>
+<hr>
+<p>Please say your name in the following div</p>
+<div id="putnamehere">Replace with your name</div>
+<button onclick="myfirstname()">Do it!!</button>
+<hr>
+<div id ="boxes">you must add boxes here
+</div>
+<button onclick="addBlueBox();">add blue box</button>
+<button onclick="addRedBox();">add red box</button>
+<button onclick="DisplayValue();">display the value</button>
+<button onclick="AddMyName();">display my name</button>
+<hr>
+<div id="recipient"></div>
+<button onclick="ToggleBox();">Toggle between</button>
+<hr>
+    After Halloween hollidays
+    <hr>
+    <p>
+        Write a program that will count the number of clicks on a 
+        button. <BR>
+        Your program should increase the count 
+        when the button "Count me" is pressed <BR>
+            <BR>
+        Your program should "RESET" (make the count equal to 0)
+        the count when the user pressed the "Reset" button
+    </p>
+    <div id="currentnumber">
+        Count: 0
+    </div>
+    <button onclick="addNumber(1);">Count me</button>
+    <button onclick="reset()">Reset</button>
+</body>
+</html>
