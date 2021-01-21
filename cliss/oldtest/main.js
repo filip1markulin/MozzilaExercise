@@ -8,12 +8,14 @@ function ComputedTemperature()
     {
         alert("Its Freezing");
     }
-    else{
+    else
+    {
        if(celciusNumber<=10) 
        {
            alert("Its chilly");
        }
-       else{
+       else
+       {
            if(celciusNumber<=25)
            {
                alert("its normal");
